@@ -1,0 +1,23 @@
+.Nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: rgb(236,23,155);
+    color: white;
+}
+
+.Nav-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Logo {
+    height: 60px;
+    pointer-events: none;
+    display: flex;
+    align-self: center;
+    padding: 10px 10px;
+    
+}

@@ -1,0 +1,16 @@
+.Tab-button {
+  color: white;
+  background-color: rgb(236,23,155);
+  padding: 15px 10px;
+  border: 2px solid white;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  font-size: 1.5vw;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+  
+.Tab-button:hover {
+  color: rgb(236,23,155);
+  background-color: white;
+}

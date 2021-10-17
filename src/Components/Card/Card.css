@@ -1,0 +1,41 @@
+.EventCard {
+    color: rgb(236,23,155);
+    background-color: whitesmoke;
+    width: 70%;
+    height: 25%;
+    margin-top: 25%;
+    margin-left: 5%;
+    border: 2px solid rgb(236,23,155);
+}
+
+.Title {
+    font-size: 2vw;
+    margin-bottom: 10%;
+    padding-top: 5%;
+}
+
+.EventCardArea {
+    justify-content: left;
+    height: 60vw;
+    display: flex;
+}
+
+.forms {
+    display: flex;
+}
+
+.buttons {
+    color: rgb(236,23,155);
+    background-color: white(236,23,155);
+    padding: 10px 10px;
+    border: 2px solid rgb(236,23,155);
+    margin-top: 5%;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    font-size: 1.5vw;
+}
+
+.buttons:hover {
+    color: white;
+    background-color: rgb(236,23,155);
+}

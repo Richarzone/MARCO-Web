@@ -1,0 +1,18 @@
+.Menu-button {
+  color: rgb(236,23,155);
+  background-color: white;
+  min-width: 30vw;
+  min-height: 6vw;
+  border: 2px solid rgb(236,23,155);
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 2.5vw;
+}
+
+.Menu-button:hover {
+  color: white;
+  background-color: rgb(236,23,155);
+}

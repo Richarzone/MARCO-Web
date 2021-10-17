@@ -1,0 +1,27 @@
+.Lista {
+    color: rgb(236,23,155);
+    background-color: whitesmoke;
+    width: 90%;
+    height: 55%;
+    margin-top: 3%;
+    margin-left: 5%;
+    border: 2px solid rgb(236,23,155);
+    border-radius: 4px;
+}
+
+.EventName {
+    font-weight: 500;
+    font-size: 3vw;
+}
+
+.Title {
+    font-size: 2vw;
+    margin-bottom: 10%;
+    padding-top: 5%;
+}
+
+.Area-lista {
+    justify-content: left;
+    height: 60vw;
+    display: flex;
+}

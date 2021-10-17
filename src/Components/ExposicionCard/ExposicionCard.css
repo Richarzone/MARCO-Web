@@ -1,0 +1,74 @@
+.ExpoCard {
+    color: rgb(236,23,155);
+    background-color: whitesmoke;
+    width: 90%;
+    height: 52%;
+    margin-top: 10%;
+    margin-left: 5%;
+    border: 2px solid rgb(236,23,155);
+}
+
+.Title-expo {
+    font-size: 2vw;
+    margin-bottom: 5%;
+    padding-top: 5%;
+}
+
+.ExpoCardArea {
+    justify-content: left;
+    height: 60vw;
+    display: flex;
+}
+
+.forms {
+    display: flex;
+}
+
+.Buttons-expo {
+    color: rgb(236,23,155);
+    background-color: white(236,23,155);
+    padding: 10px 10px;
+    border: 2px solid rgb(236,23,155);
+    margin-top: 5%;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    font-size: 1.5vw;
+}
+
+.Buttons-expo:hover {
+    color: white;
+    background-color: rgb(236,23,155);
+}
+
+.Expo-data {
+    overflow: auto;
+    height: 60%;
+    width: 85%;
+    margin-left: 7.5%;
+    border: 2px solid rgb(236,23,155);
+    color: white;
+    background-color: rgb(236,23,155);
+    justify-content: left;
+}
+
+.textfield {
+    width: 12.85vw;
+}
+
+.textarea {
+    resize: none;
+    vertical-align: top;
+    height: 10vw;
+    width: 13vw;
+    margin-top: 1%;
+}
+
+.Column-30{
+    float: left;
+    width: 30%;
+  }
+  
+.Column-70{
+    float: left;
+    width: 70%;
+}
