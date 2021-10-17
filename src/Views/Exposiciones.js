@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import '../App.css';
 import { ExposicionCard } from "../Components/ExposicionCard/index";
 import { Lista } from "../Components/Lista/index";

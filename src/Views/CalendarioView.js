@@ -1,18 +1,20 @@
-import React from "react";
+import React, { Component } from "react";
 import '../App.css';
 import Nav from '../Navigation';
 import { Lista } from "../Components/Lista";
 
-function Calendario() {
-    return (
-        <div className="App">
-            <Nav/>
-            <div className="">
-                <Lista/>
+export class Calendario extends Component {
+    render() {
+        return (
+            <div className="App">
+                <Nav/>
+                <div className="">
+                    <Lista/>
+                </div>
+                
             </div>
-            
-        </div>
-    );
+        );
+    }
 }
 
 export default Calendario;
