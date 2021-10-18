@@ -4,7 +4,6 @@ import Nav from '../Navigation';
 import { Lista } from "../Components/Lista";
 
 export class Calendario extends Component {
-
     async componentDidMount()
     {
         const url = "http://localhost:4000/agendarVisita/getDias";
@@ -18,9 +17,6 @@ export class Calendario extends Component {
             <div className="App">
                 <Nav/>
                 <div>
-                    <Lista>
-                        
-                    </Lista>
                     <Lista/>
                 </div>
             </div>

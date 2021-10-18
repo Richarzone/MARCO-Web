@@ -1,4 +1,6 @@
-import React, {Component} from "react"
+import React, { Component } from "react"
+import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
+import 'react-accessible-accordion/dist/fancy-example.css';
 import "./Lista.css"
 
 export class Lista extends Component {
@@ -6,7 +8,20 @@ export class Lista extends Component {
         return(
             <div className="Area-lista">
                 <div className="Lista">
-                    
+                    <Accordion allowZeroExpanded className="accordion">
+                        <AccordionItem>
+                            <AccordionItemHeading>
+                                <AccordionItemButton className="accordion__button">
+                                    Lunes
+                                </AccordionItemButton>
+                            </AccordionItemHeading>
+                            <AccordionItemPanel className="accordion__panel">
+                                <p>
+                                    Info
+                                </p>
+                            </AccordionItemPanel>
+                        </AccordionItem>
+                    </Accordion>
                 </div>
             </div>
         )
