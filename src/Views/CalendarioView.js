@@ -7,7 +7,7 @@ export class Calendario extends Component {
 
     async componentDidMount()
     {
-        const url = "localhost:4000/agendarVisita/getDias";
+        const url = "http://localhost:4000/agendarVisita/getDias";
         const response = await fetch(url);
         const data = await response.json();
         console.log(data);
@@ -17,7 +17,10 @@ export class Calendario extends Component {
         return (
             <div className="App">
                 <Nav/>
-                <div className="">
+                <div>
+                    <Lista>
+                        
+                    </Lista>
                     <Lista/>
                 </div>
             </div>
