@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
-import 'react-accessible-accordion/dist/fancy-example.css';
+import "./Acordion.css";
 import "./Lista.css"
 
 export class Lista extends Component {
