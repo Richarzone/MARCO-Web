@@ -20,7 +20,6 @@ export class Calendario extends Component {
         const data = await response.json();
         this.setState({dias : data, isLoaded : true});
         console.log(data);
-        return data;
     }
 
     render() {
@@ -30,9 +29,9 @@ export class Calendario extends Component {
                     <div className="Area-lista">
                         <div className="Lista">
                             {
-                                this.state.dias.map(({dia, numBloques}) => {
+                                this.state.dias.map(({dia, bloques}) => {
                                     return(
-                                        <Lista Dia={dia} numDia={numBloques} />
+                                        <Lista Dia={dia} numDias={[bloques]}/>
                                     )
                                 })
                             }
