@@ -6,24 +6,33 @@ import "./Lista.css"
 export class Lista extends Component {
     render() {
         return(
-            <div className="Area-lista">
-                <div className="Lista">
-                    <Accordion allowZeroExpanded className="accordion">
-                        <AccordionItem>
-                            <AccordionItemHeading>
-                                <AccordionItemButton className="accordion__button">
-                                    Lunes
-                                </AccordionItemButton>
-                            </AccordionItemHeading>
-                            <AccordionItemPanel className="accordion__panel">
-                                <p>
-                                    Info
-                                </p>
-                            </AccordionItemPanel>
-                        </AccordionItem>
-                    </Accordion>
-                </div>
-            </div>
+            <Accordion allowZeroExpanded className="accordion">
+                <AccordionItem>
+                    <AccordionItemHeading>
+                        <AccordionItemButton className="accordion__button">
+                            {this.props.Dia}
+                        </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel className="accordion__panel">
+                        
+                        <Accordion allowZeroExpanded className="sub_accordion">
+                            <AccordionItem>
+                                <AccordionItemHeading>
+                                    <AccordionItemButton className="sub_accordion__button">
+                                        Bloque 1
+                                    </AccordionItemButton>
+                                </AccordionItemHeading>
+                                <AccordionItemPanel className="accordion__panel">
+                                    <p>
+                                        {this.props.numDia}
+                                    </p>
+                                </AccordionItemPanel>
+                            </AccordionItem>
+                        </Accordion>
+                        
+                    </AccordionItemPanel>
+                </AccordionItem>
+            </Accordion>
         )
     }
 }

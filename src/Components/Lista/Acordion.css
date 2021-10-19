@@ -1,7 +1,15 @@
 .accordion {
-    border: 1px solid rgb(236,23,155);;
+    border: 2px solid rgb(236,23,155);
     border-radius: 2px;
     background-color: rgb(236,23,155);
+    margin-bottom: 0.2%;
+}
+
+.sub_accordion {
+    border: 2px solid rgb(236,23,155);
+    border-radius: 2px;
+    background-color: rgb(236,23,155);
+    margin-bottom: 0.2%;
 }
 
 .accordion__item + .accordion__item {
@@ -13,7 +21,7 @@
     color: white;
     cursor: pointer;
     padding: 2%;
-    width: 95.95%;
+    width: 95.97%;
     text-align: left;
     border: none;
 }
@@ -41,6 +49,37 @@
 
 [hidden] {
     display: none;
+}
+
+.sub_accordion__button {
+    background-color: rgb(236,23,155);
+    color: white;
+    cursor: pointer;
+    padding: 2%;
+    width: 95.97%;
+    text-align: left;
+    border: none;
+}
+
+.sub_accordion__button:hover {
+    background-color: #ddd;
+    color: rgb(236,23,155);
+}
+
+.sub_accordion__button:before {
+    display: inline-block;
+    content: '';
+    height: 10px;
+    width: 10px;
+    margin-right: 12px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+}
+
+.sub_accordion__button[aria-expanded='true']::before,
+.sub_accordion__button[aria-selected='true']::before {
+    transform: rotate(45deg);
 }
 
 .accordion__panel {

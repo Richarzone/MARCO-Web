@@ -2,11 +2,12 @@
     color: rgb(236,23,155);
     background-color: whitesmoke;
     width: 90%;
-    height: 55%;
-    margin-top: 3%;
+    height: 63.7%;
+    margin-top: 1%;
     margin-left: 5%;
     border: 2px solid rgb(236,23,155);
     border-radius: 4px;
+    overflow: auto;
 }
 
 .EventName {
