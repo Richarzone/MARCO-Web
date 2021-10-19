@@ -4,10 +4,7 @@ import "./Acordion.css";
 import "./Lista.css"
 
 export class Lista extends Component {
-
     render() {
-    console.log(this.props.numDias[0])
-
         return(
             <Accordion allowZeroExpanded className="accordion">
                 <AccordionItem>
@@ -18,7 +15,7 @@ export class Lista extends Component {
                     </AccordionItemHeading>
                     <AccordionItemPanel className="accordion__panel">
                     {
-                        this.props.numDias[0].map((bloque) => (
+                        this.props.Bloques[0].map((bloque) => (
                             <Accordion allowZeroExpanded className="sub_accordion">
                                 <AccordionItem>
                                     <AccordionItemHeading>

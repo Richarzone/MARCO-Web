@@ -31,7 +31,7 @@ export class Calendario extends Component {
                             {
                                 this.state.dias.map(({dia, bloques}) => {
                                     return(
-                                        <Lista Dia={dia} numDias={[bloques]}/>
+                                        <Lista Dia={dia} Bloques={[bloques]}/>
                                     )
                                 })
                             }
