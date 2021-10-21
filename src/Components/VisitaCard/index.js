@@ -3,18 +3,19 @@ import "./VisitaCard.css"
 
 export class VisitaCard extends Component {
     render() {
+        var date = new Date(this.props.Fecha);
         return (
             <div className="Visita-card-area">
                 <div className="Visita-card">
                     <div className="Text-area">
                         <div>
-                            Visitante: {this.props.nombre}
+                            Visitante: {this.props.Nombre}
                         </div>
                         <div>
-                            Fecha: {this.props.fecha} &nbsp; Hora: {this.props.hora}
+                            Fecha: {((date.getDate() > 9) ? date.getDate() : ('0' + date.getDate())) + '/' + ((date.getMonth() > 8) ? (date.getMonth() + 1) : ('0' + (date.getMonth() + 1))) + '/' + date.getFullYear()} &nbsp; Hora: {this.props.Hora}
                         </div>
                         <div>
-                            Guia: {this.props.guia}
+                            Guia: {this.props.Guia}
                         </div>
                     </div>
                 </div>
