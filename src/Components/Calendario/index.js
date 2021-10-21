@@ -3,7 +3,7 @@ import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, Ac
 import "./Acordion.css";
 import "./Lista.css"
 
-export class Lista extends Component {
+export class Calendario extends Component {
     render() {
         if(this.props.Dia != "Lunes")
         {

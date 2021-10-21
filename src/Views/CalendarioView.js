@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import '../App.css';
 import Nav from '../Navigation';
-import { Lista } from "../Components/Lista";
-import "../Components/Lista/Lista.css"
+import { Calendario } from "../Components/Calendario";
+import "../Components/Calendario/Lista.css"
 
-export class Calendario extends Component {
+export class CalendarioView extends Component {
 
     constructor(props) {
         super(props);
@@ -19,7 +19,6 @@ export class Calendario extends Component {
         const response = await fetch(url);
         const data = await response.json();
         this.setState({dias : data, isLoaded : true});
-        console.log(data);
     }
 
     render() {
@@ -31,16 +30,15 @@ export class Calendario extends Component {
                             {
                                 this.state.dias.map(({dia, bloques}) => {
                                     return(
-                                        <Lista Dia={dia} Bloques={[bloques]}/>
+                                        <Calendario Dia={dia} Bloques={[bloques]}/>
                                     )
                                 })
                             }
                         </div>
                     </div>
             </div>
-            
         );
     }
 }
 
-export default Calendario;
+export default CalendarioView;

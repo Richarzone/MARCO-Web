@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import '../App.css';
 import { ExposicionCard } from "../Components/ExposicionCard/index";
-import { Lista } from "../Components/Lista/index";
 import Nav from '../Navigation';
+import "../Components/Calendario/Lista.css"
 
 function Exposiciones() {
     return (
@@ -12,7 +12,11 @@ function Exposiciones() {
                 <ExposicionCard/>
             </div>
             <div className="Columns-70">
-                <Lista/>
+                <div className="Area-lista">
+                    <div className="Lista">
+                    
+                    </div>
+                </div>
             </div>
         </div>
     );

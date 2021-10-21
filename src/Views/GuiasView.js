@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import '../App.css';
 import Nav from '../Navigation';
 import { Card } from "../Components/Card";
-import { Lista } from "../Components/Lista";
 
 function Guias() {
     return (
@@ -12,7 +11,7 @@ function Guias() {
                 <Card/>
             </div>
             <div className="Columns-70">
-                <Lista/>
+                
             </div>
         </div>
     );
