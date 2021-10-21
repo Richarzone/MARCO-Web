@@ -1,17 +1,15 @@
-.Multi-button {
+.Visita-card {
     color: white;
     font-size: 20px;
     background-color: #494949;
-    position: absolute;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 4px;
     width: 50px;
     height: 50px;
     transition-duration: 0.4s;
-    right: 27%;
-    top: 224px;
+    top: 10%;
 }
 
-.Multi-button:hover {
+.Visita-card {
     background-color: rgb(107, 107, 107);
 }
