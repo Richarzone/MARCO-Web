@@ -4,6 +4,7 @@ import  { useHistory } from 'react-router-dom'
 import '../App.css';
 import Nav from '../Navigation';
 import AgregarGuiaCard from "../Components/Guias/AgregarGuiaCard/AgregarGuiaCard";
+import { Card } from "../Components/Card";
 
 function Guias() {
 

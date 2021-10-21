@@ -1,24 +1,24 @@
 import React, { Component } from "react";
 import '../App.css';
+import { VisitaCard } from "../Components/VisitaCard/index";
 import Nav from '../Navigation';
-import { Calendario } from "../Components/Calendario";
 import "../Components/Calendario/Lista.css"
 
-export class CalendarioView extends Component {
-
+export class Agenda extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            dias: [],
+            visitas: [],
             isLoaded: false
         };
     }
     
     async componentDidMount() {
-        const url = "http://localhost:4000/agendarVisita/getDias";
+        const url = "http://localhost:4000/agendarVisita/getVisitas";
         const response = await fetch(url);
         const data = await response.json();
-        this.setState({dias : data, isLoaded : true});
+        this.setState({visitas : data, isLoaded : true});
+        console.log(data);
     }
 
     render() {
@@ -28,9 +28,9 @@ export class CalendarioView extends Component {
                     <div className="Area-lista">
                         <div className="Lista">
                             {
-                                this.state.dias.map(({dia, bloques}) => {
+                                this.state.visitas.map(({id_visitante, fecha, horaInicio, guia}) => {
                                     return(
-                                        <Calendario Dia={dia} Bloques={[bloques]}/>
+                                        <VisitaCard Nombre={id_visitante} Fecha={fecha} Hora={horaInicio} Guia={guia}/>
                                     )
                                 })
                             }
@@ -38,7 +38,7 @@ export class CalendarioView extends Component {
                     </div>
             </div>
         );
-    }
+    }   
 }
 
-export default CalendarioView;
+export default Agenda;

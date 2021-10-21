@@ -19,10 +19,13 @@ export class Home extends Component {
                     </div>
                     <div className="Menu-button-area">
                         <Link to="/AdminVisitas">
-                            <MenuButton btnString={"Visitas al museo"}/>
+                            <MenuButton btnString={"Administracion del museo"}/>
                         </Link>
                         <Link to="/Exposiciones">
                             <MenuButton btnString={"Exposiciones"}/>
+                        </Link>
+                        <Link to="/AgendaVisitas">
+                            <MenuButton btnString={"Agenda de visitas"}/>
                         </Link>
                     </div>
                 </header>

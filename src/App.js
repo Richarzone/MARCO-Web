@@ -6,7 +6,9 @@ import AdminVisitas from './Views/AdminVisitasView';
 import Exposiciones from './Views/Exposiciones';
 import Guias from './Views/GuiasView';
 import Horarios from './Views/HorariosView';
-import Visitas from './Views/CalendarioView';
+// import Visitas from './Views/CalendarioView';
+import Calendario from './Views/CalendarioView';
+import { Agenda } from './Views/AgendaVisitas';
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
           <Route path="/Exposiciones" component={Exposiciones}/>
           <Route path="/Guias/:id" component={Horarios}/>
           <Route path="/Guias" component={Guias}/>
-          <Route path="/CalendarioVisitas" component={Visitas}/>
+          <Route path="/CalendarioVisitas" component={Calendario}/>
+          <Route path="/AgendaVisitas" component={Agenda}/>
         </Switch>
       </div>
     </Router>

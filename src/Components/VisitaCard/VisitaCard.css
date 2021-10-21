@@ -1,0 +1,31 @@
+.Visita-card {
+    border: 2px solid rgb(236,23,155);
+    border-radius: 1px;
+    color: rgb(236,23,155);
+    margin-bottom: -0.1%;
+    margin-left: -0.1%;
+    margin-top: -0.1%;
+    margin-right: -0.1%;
+    width: 99.85%;
+    height: 20%;
+    transition-duration: 0.4s;
+    font-size: 2vw;
+}
+
+.Visita-card:hover {
+    background-color: rgb(236,23,155);
+    color: white;
+}
+
+.Visita-card-area {
+    text-align: left;
+    display: flex;
+}
+
+.Text-area {
+    margin-left: 1%;
+}
+
+.Title-text {
+    font-weight: 100px;
+}
