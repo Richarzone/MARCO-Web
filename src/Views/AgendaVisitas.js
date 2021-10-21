@@ -11,7 +11,7 @@ export class Agenda extends Component {
                 <Nav/>
                     <div className="Area-lista">
                         <div className="Lista">
-                            <VisitaCard/>
+                            <VisitaCard nombre="Ricardo Andres Arriaga Quezada" fecha="20/10/2021" hora="14:30" guia="Mauricio Lmao"/>
                         </div>
                     </div>
             </div>

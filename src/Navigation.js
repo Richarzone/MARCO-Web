@@ -18,6 +18,9 @@ function Nav() {
                 <Link to="/Exposiciones">
                     <TabButton btnString="Exposiciones"/>
                 </Link>
+                <Link to="/AgendaVisitas">
+                    <TabButton btnString="Agenda de visitas"/>
+                </Link>
             </ul>
         </nav>
     );
